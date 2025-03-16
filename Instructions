@@ -1,0 +1,98 @@
+Stock Price Agent using LangChain & yFinance
+🔹 Project Overview
+A smart assistant that fetches and visualizes stock prices using LangChain and yFinance.
+Users can ask for stock prices using natural language, and the system extracts the ticker and retrieves real-time data.
+🔹 Key Features
+✅ AI-Powered Query Handling – Users can type queries like "Get the stock price of Microsoft".
+✅ Real-Time Stock Price Retrieval – Uses yfinance API to get updated stock prices.
+✅ Stock Data Visualization – Plots 1-month closing price trends using matplotlib.
+✅ Automated Ticker Extraction – Uses regex to detect stock ticker symbols.
+✅ Agent-Based Workflow – Uses LangChain to process requests efficiently.
+
+🔹 Tech Stack Used
+🔸 Python – Core programming language
+🔸 LangChain – AI-driven query handling
+🔸 Google Gemini AI – LLM integration for smart responses
+🔸 yFinance – Fetching real-time stock data
+🔸 Matplotlib – Data visualization for stock trends
+
+🔹 Example Stock Ticker Codes
+🔹 AAPL – Apple
+🔹 GOOGL – Alphabet (Google)
+🔹 MSFT – Microsoft
+🔹 TSLA – Tesla
+🔹 AMZN – Amazon
+🔹 NFLX – Netflix
+
+🔹 How It Works (Step-by-Step)
+1️⃣ User Query – Example: "What is the stock price of GOOGL?"
+2️⃣ Extract Ticker Symbol – Regex detects GOOGL.
+3️⃣ Fetch Stock Data – Uses yfinance to get the latest closing price.
+4️⃣ Return Stock Price – Displays stock price & optionally visualizes a 1-month trend.
+12:30 AM
+-- Stock Price Agent using LangChain & yFinance --
+🔹 Project Overview
+This project is an AI-powered stock price assistant that allows users to query stock prices using natural language. It extracts the ticker symbol, fetches real-time stock prices, and provides data visualization for stock trends.
+
+🚀 How to Replicate This Project
+1️⃣ Prerequisites
+Ensure you have the following installed:
+✅ Python (>=3.8)
+✅ Required Python libraries (pip install -r requirements.txt)
+✅ A Google Gemini AI API Key
+
+2️⃣ Get Your Google Gemini AI API Key
+Go to Google AI Studio and sign in.
+Navigate to API Keys and generate a new key.
+Copy the API key.
+3️⃣ Clone the Repository
+git clone https://github.com/your-username/stock-price-agent.git
+4️⃣ Install Dependencies
+Run the following command to install required libraries:
+pip install -r requirements.txt
+Dependencies Included:
+langchain
+langchain-google-genai
+yfinance
+matplotlib
+python-dotenv
+
+5️⃣ Set Up Environment Variables
+Create a .env file in the project root directory.
+Add your Google Gemini API key inside it:
+ini
+Copy
+Edit
+GOOGLE_API_KEY=your_api_key_here
+
+🔹 Running the Project
+1️⃣ Running main.py (Stock Price Retrieval & Visualization)
+Run the main.py file to fetch stock prices using AI and generate a visualization:
+
+python main.py
+
+Prompts you for a query (e.g., "Get the stock price of Microsoft").
+
+Uses Google Gemini AI & yfinance to fetch the latest stock price.
+
+Returns the latest stock price in real-time.
+
+Automatically generates a stock price trend graph for the last month using matplotlib.
+📌 Example Output:
+
+💰 Latest stock price for MSFT: $345.67
+📊 Stock price visualization displayed.
+
+✔ Graph Output:
+A matplotlib plot displaying Microsoft's (MSFT) closing prices over the past month.
+
+2️⃣ Running stock_tool.py (Stock Price Visualization Only)
+If you only want to visualize stock trends without querying AI, run:
+
+🔹 Example Stock Ticker Codes
+🔹 AAPL – Apple
+🔹 GOOGL – Alphabet (Google)
+🔹 MSFT – Microsoft
+🔹 TSLA – Tesla
+🔹 AMZN – Amazon
+🔹 NFLX – Netflix
