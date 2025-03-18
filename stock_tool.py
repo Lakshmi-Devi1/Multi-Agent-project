@@ -44,8 +44,7 @@ if __name__ == "__main__":
     tool = StockTool()
     
     # Manually input the stock ticker symbol
-    ticker = "GOOGL"  # Example: Google stock ticker, change this to any valid ticker
-    #"MSFT" #Example :Microsoft stock ticker, change this to any valid ticker
+    ticker = "GOOGL"  # Example: Google stock ticker, change this to any valid ticker "MSFT" #Example :Microsoft stock ticker, change this to any valid ticker
     
     # Get the latest stock price
     latest_price = tool.get_latest_stock_price(ticker)
